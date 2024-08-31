@@ -1,0 +1,21 @@
+{
+  "name": "sm_technology_server",
+  "version": "1.0.0",
+  "description": "this is server side for Geritage project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev",
+    "dev": "nodemon index.js"
+  },
+  "author": "Soriful Ismam",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "env": "^0.0.2",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoos": "^0.0.1-security",
+    "nodemon": "^3.1.4"
+  }
+}
