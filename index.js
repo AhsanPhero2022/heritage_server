@@ -17,8 +17,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    await client.connect(); // Ensure MongoDB client is connected
-    console.log("Connected to MongoDB");
+    // await client.connect();
 
     const db = client.db("sm_technology");
     const propertiesCollection = db.collection("properties");
