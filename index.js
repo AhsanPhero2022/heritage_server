@@ -44,11 +44,11 @@ async function run() {
     });
 
     // GET properties by category
-    app.get("/category", async (req, res) => {
+    app.get("/price", async (req, res) => {
       const result = await propertiesCollection.find().toArray();
       result.sort((a, b) => {
-        if (a.category < b.category) return -1;
-        if (a.category > b.category) return 1;
+        if (a.price < b.price) return -1;
+        if (a.price > b.price) return 1;
         return 0;
       });
       res.send(result);
